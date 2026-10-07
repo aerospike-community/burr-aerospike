@@ -1697,22 +1697,9 @@ clients.</p>
 </dl>
 
 <span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PersistedStateData</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#burr.integrations.persisters.b_aerospike.AerospikeBasePersister.load" title="Link to this definition">¶</a></dt>
-<dd><p>Loads the state for a given app_id</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>partition_key</strong> – the partition key. Note this could be None, but it’s up to the persistor to whether
-that is a valid value it can handle.</p></li>
-<li><p><strong>app_id</strong> – the identifier for the app instance being recorded.</p></li>
-<li><p><strong>sequence_id</strong> – optional, the state corresponding to a specific point in time. Specifically state at the
-end of the action with this sequence_id. If sequence_id is not provided, persistor should return the state
-from the latest fully completed action.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>PersistedStateData or None</p>
-</dd>
-</dl>
+<dd><p>Load the latest or a specific checkpoint for an application.</p>
+<p><code class="docutils literal notranslate"><span class="pre">app_id=None</span></code> is not supported by the Aerospike persister; callers must
+supply an application identifier.</p>
 </dd></dl>
 
 <dl class="py method">

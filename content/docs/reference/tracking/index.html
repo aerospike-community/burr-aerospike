@@ -295,7 +295,7 @@ s=d.getElementsByTagName('script')[0];
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../examples/data-science/">🧪 Data science</a><input aria-label="Toggle navigation of 🧪 Data science" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../examples/data-science/ml_training/">Hyperparameter tuning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../examples/data-science/ml_training/">ML training</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../examples/data-science/simulation/">Simulations</a></li>
 </ul>
 </li>
@@ -616,7 +616,9 @@ as the last step.</p>
 <li><p><strong>action</strong> – Action that was executed</p></li>
 <li><p><strong>result</strong> – Result of the action</p></li>
 <li><p><strong>sequence_id</strong> – Sequence ID of the action</p></li>
-<li><p><strong>exception</strong> – Exception that was raised</p></li>
+<li><p><strong>exception</strong> – Exception that was raised, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if the step completed. A streaming
+step stopped early is reported with <code class="docutils literal notranslate"><span class="pre">GeneratorExit</span></code> (closed) or <code class="docutils literal notranslate"><span class="pre">CancelledError</span></code>
+(its task was cancelled).</p></li>
 <li><p><strong>future_kwargs</strong> – Future keyword arguments</p></li>
 </ul>
 </dd>

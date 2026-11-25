@@ -293,7 +293,7 @@ s=d.getElementsByTagName('script')[0];
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../examples/data-science/">🧪 Data science</a><input aria-label="Toggle navigation of 🧪 Data science" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data-science/ml_training/">Hyperparameter tuning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../examples/data-science/ml_training/">ML training</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../examples/data-science/simulation/">Simulations</a></li>
 </ul>
 </li>
@@ -494,6 +494,8 @@ s=d.getElementsByTagName('script')[0];
     <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="../reference/application/#burr.core.application.ApplicationBuilder.abuild">abuild() (burr.core.application.ApplicationBuilder method)</a>
 </li>
+        <li><a href="../reference/actions/#burr.core.action.AsyncStreamingResultContainer.aclose">aclose() (burr.core.action.AsyncStreamingResultContainer method)</a>
+</li>
         <li><a href="../reference/actions/#burr.core.action.Action">Action (class in burr.core.action)</a>
 </li>
         <li><a href="../reference/actions/#burr.core.action.action">action (class in burr.core.action)</a>
@@ -651,8 +653,12 @@ s=d.getElementsByTagName('script')[0];
           <li><a href="../reference/persister/#burr.integrations.persisters.b_redis.RedisBasePersister.cleanup">(burr.integrations.persisters.b_redis.RedisBasePersister method)</a>
 </li>
         </ul></li>
-        <li><a href="../reference/persister/#burr.integrations.persisters.b_aiosqlite.AsyncSQLitePersister.close">close() (burr.integrations.persisters.b_aiosqlite.AsyncSQLitePersister method)</a>
+        <li><a href="../reference/actions/#burr.core.action.StreamingResultContainer.close">close() (burr.core.action.StreamingResultContainer method)</a>
+
+        <ul>
+          <li><a href="../reference/persister/#burr.integrations.persisters.b_aiosqlite.AsyncSQLitePersister.close">(burr.integrations.persisters.b_aiosqlite.AsyncSQLitePersister method)</a>
 </li>
+        </ul></li>
         <li><a href="../reference/conditions/#burr.core.action.Condition">Condition (class in burr.core.action)</a>
 </li>
         <li><a href="../reference/typing/#burr.core.typing.TypingSystem.construct_data">construct_data() (burr.core.typing.TypingSystem method)</a>
@@ -661,14 +667,14 @@ s=d.getElementsByTagName('script')[0];
           <li><a href="../reference/typing/#burr.integrations.pydantic.PydanticTypingSystem.construct_data">(burr.integrations.pydantic.PydanticTypingSystem method)</a>
 </li>
         </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="../reference/typing/#burr.core.typing.TypingSystem.construct_state">construct_state() (burr.core.typing.TypingSystem method)</a>
 
         <ul>
           <li><a href="../reference/typing/#burr.integrations.pydantic.PydanticTypingSystem.construct_state">(burr.integrations.pydantic.PydanticTypingSystem method)</a>
 </li>
         </ul></li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="../reference/application/#burr.core.application.Application.context">context (burr.core.application.Application property)</a>
 </li>
         <li><a href="../reference/persister/#burr.integrations.persisters.b_asyncpg.AsyncPostgreSQLPersister.copy">copy() (burr.integrations.persisters.b_asyncpg.AsyncPostgreSQLPersister method)</a>
@@ -1470,6 +1476,8 @@ s=d.getElementsByTagName('script')[0];
   <h2>V</h2>
   <table style="width: 100%" class="indextable genindextable"><tr>
     <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="../reference/application/#burr.core.graph.Graph.validate">validate() (burr.core.graph.Graph method)</a>
+</li>
         <li><a href="../reference/application/#burr.core.application.Application.validate_correct_async_use">validate_correct_async_use() (burr.core.application.Application method)</a>
 </li>
         <li><a href="../reference/actions/#burr.core.action.Action.validate_inputs">validate_inputs() (burr.core.action.Action method)</a>
